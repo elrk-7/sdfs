@@ -1,0 +1,335 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TIMESTOP = Instance.new("TextButton")
+local STWH = Instance.new("TextButton")
+local TSBYPASS = Instance.new("TextButton")
+local BLOCK = Instance.new("TextButton")
+local HG = Instance.new("TextButton")
+local D4C = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.0334054716, 0, 0.449167311, 0)
+Frame.Size = UDim2.new(0, 261, 0, 177)
+Frame.Visible = false
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(0, 0, -1.72415696e-07, 0)
+TextLabel.Size = UDim2.new(0, 261, 0, 30)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "SA-FUCKER MOBILE"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TIMESTOP.Name = "TIMESTOP"
+TIMESTOP.Parent = Frame
+TIMESTOP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TIMESTOP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TIMESTOP.BorderSizePixel = 2
+TIMESTOP.Position = UDim2.new(0.019619938, 0, 0.230653584, 0)
+TIMESTOP.Size = UDim2.new(0, 58, 0, 43)
+TIMESTOP.Font = Enum.Font.Unknown
+TIMESTOP.Text = "TS"
+TIMESTOP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TIMESTOP.TextSize = 14.000
+
+STWH.Name = "STW-H"
+STWH.Parent = Frame
+STWH.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+STWH.BorderColor3 = Color3.fromRGB(255, 255, 255)
+STWH.BorderSizePixel = 2
+STWH.Position = UDim2.new(0.753610909, 0, 0.230653584, 0)
+STWH.Size = UDim2.new(0, 58, 0, 43)
+STWH.Font = Enum.Font.Unknown
+STWH.Text = "STWH"
+STWH.TextColor3 = Color3.fromRGB(255, 255, 255)
+STWH.TextSize = 14.000
+
+TSBYPASS.Name = "TS BYPASS"
+TSBYPASS.Parent = Frame
+TSBYPASS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TSBYPASS.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TSBYPASS.BorderSizePixel = 2
+TSBYPASS.Position = UDim2.new(0.376526415, 0, 0.230653584, 0)
+TSBYPASS.Size = UDim2.new(0, 58, 0, 43)
+TSBYPASS.Font = Enum.Font.Unknown
+TSBYPASS.Text = "TSB"
+TSBYPASS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TSBYPASS.TextSize = 14.000
+
+BLOCK.Name = "BLOCK"
+BLOCK.Parent = Frame
+BLOCK.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BLOCK.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BLOCK.BorderSizePixel = 2
+BLOCK.Position = UDim2.new(0.0179787129, 0, 0.58658576, 0)
+BLOCK.Size = UDim2.new(0, 58, 0, 43)
+BLOCK.Font = Enum.Font.Unknown
+BLOCK.Text = "BLOCK"
+BLOCK.TextColor3 = Color3.fromRGB(255, 255, 255)
+BLOCK.TextSize = 12.000
+
+HG.Name = "HG"
+HG.Parent = Frame
+HG.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HG.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HG.BorderSizePixel = 2
+HG.Position = UDim2.new(0.374300539, 0, 0.58658576, 0)
+HG.Size = UDim2.new(0, 58, 0, 43)
+HG.Font = Enum.Font.Unknown
+HG.Text = "HG"
+HG.TextColor3 = Color3.fromRGB(255, 255, 255)
+HG.TextSize = 14.000
+
+D4C.Name = "D4C"
+D4C.Parent = Frame
+D4C.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+D4C.BorderColor3 = Color3.fromRGB(255, 255, 255)
+D4C.BorderSizePixel = 2
+D4C.Position = UDim2.new(0.753610909, 0, 0.58658576, 0)
+D4C.Size = UDim2.new(0, 58, 0, 43)
+D4C.Font = Enum.Font.Unknown
+D4C.Text = "D4C"
+D4C.TextColor3 = Color3.fromRGB(255, 255, 255)
+D4C.TextSize = 14.000
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.310294122, 0)
+TextButton.Size = UDim2.new(0, 35, 0, 37)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function MXZU_fake_script() -- TIMESTOP.Script 
+	local script = Instance.new('Script', TIMESTOP)
+
+	local textButton = script.Parent -- Assuming the script is a child of the TextButton
+	
+	textButton.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = 15,
+			[2] = "dioova"
+		}
+		game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Timestop"):FireServer(unpack(args))
+	end)
+	
+end
+coroutine.wrap(MXZU_fake_script)()
+local function EJOF_fake_script() -- STWH.Script 
+	local script = Instance.new('Script', STWH)
+
+	local textButton = script.Parent -- Assuming the script is a child of the TextButton
+	
+	textButton.MouseButton1Click:Connect(function()
+		while true do
+			local args = {
+				[1] = "Alternate",
+				[2] = "STWRTZ",
+				[3] = true
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+			wait(1)
+		end
+	end)
+	
+end
+coroutine.wrap(EJOF_fake_script)()
+local function TSLOORZ_fake_script() -- TSBYPASS.Script 
+	local script = Instance.new('Script', TSBYPASS)
+
+	while true do
+		local localPlayer = game:GetService("Players").LocalPlayer
+		if localPlayer then
+			local character = localPlayer.Character
+			if character then
+				local partsToToggle = {}
+				local function collectParts(parent)
+					for _, child in ipairs(parent:GetChildren()) do
+						if child:IsA("BasePart") then
+							table.insert(partsToToggle, child)
+						end
+						collectParts(child)
+					end
+				end
+				collectParts(character)
+				local function anchorParts(parts, anchor)
+					for _, part in ipairs(parts) do
+						local args = {
+							[1] = part,
+							[2] = anchor
+						}
+						game:GetService("ReplicatedStorage"):WaitForChild("Anchor"):FireServer(unpack(args))
+					end
+				end
+				anchorParts(partsToToggle, false)
+				local stand = character:FindFirstChild("Stand")
+				if stand then
+					local partsToAnchor = {}
+					collectParts(stand)
+					anchorParts(partsToAnchor, false)
+				else
+					warn("Stand object not found in character")
+				end
+			else
+				warn("Character not found for LocalPlayer")
+			end
+		else
+			warn("LocalPlayer not found")
+		end
+		wait(1) 
+	end
+end
+coroutine.wrap(TSLOORZ_fake_script)()
+local function EMBH_fake_script() -- BLOCK.Script 
+	local script = Instance.new('Script', BLOCK)
+
+	-- Get the TextButton
+	local textButton = script.Parent -- Assuming this script is a child of the TextButton
+	
+	-- Define the arguments
+	local args = {
+		[1] = "Alternate",
+		[2] = "Block"
+	}
+	
+	-- Get the RemoteEvent
+	local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input")
+	
+	-- Set up the MouseButton1Click event
+	textButton.MouseButton1Click:Connect(function()
+		remoteEvent:FireServer(unpack(args))
+	end)
+	
+end
+coroutine.wrap(EMBH_fake_script)()
+local function XRWZ_fake_script() -- HG.Script 
+	local script = Instance.new('Script', HG)
+
+	-- Define a function to handle input
+	local function onInput(input, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				for i = 1, 50 do
+					local hitPosition = input.Position  -- Use input.Position to get the position of the hit
+					local args = {
+						[1] = "Alternate",
+						[2] = "EmeraldProjectile2",
+						[3] = false,
+						[4] = hitPosition  -- Pass the hit position to FireServer
+					}
+					game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+				end
+			end
+		end
+	end
+	
+	-- Connect the function to InputBegan event of UserInputService
+	game:GetService("UserInputService").InputBegan:Connect(onInput)
+	
+end
+coroutine.wrap(XRWZ_fake_script)()
+local function PQFEFGQ_fake_script() -- D4C.Script 
+	local script = Instance.new('Script', D4C)
+
+	-- Reference to the TextButton
+	local textButton = script.Parent  -- Assuming the LocalScript is a child of the TextButton
+	
+	-- Function to execute when button is clicked
+	local function onButtonClicked()
+		-- Define arguments to pass to the server script
+		local args = {
+			[1] = "Alternate",
+			[2] = "Clone"
+		}
+	
+		-- Find the server script and fire the server event with arguments
+		local replicatedStorage = game:GetService("ReplicatedStorage")
+		local inputEvent = replicatedStorage:WaitForChild("Main"):WaitForChild("Input")
+		inputEvent:FireServer(unpack(args))
+	end
+	
+	-- Connect the function to the TextButton's MouseButton1Click event
+	textButton.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(PQFEFGQ_fake_script)()
+local function AMWLJKG_fake_script() -- Frame.DragScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(AMWLJKG_fake_script)()
+local function RXFQNPU_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local frame = script.Parent.Parent.Frame
+	
+	button.MouseButton1Click:Connect(function()
+		frame.Visible = not frame.Visible
+	end)
+end
+coroutine.wrap(RXFQNPU_fake_script)()
